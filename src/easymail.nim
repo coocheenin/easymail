@@ -45,7 +45,6 @@ proc mail*(to: string, subject: string, message: string, ext: seq[string] = @[or
   for h in ext:
     if find(h, "From:") == -1 : options &= h & crlf
   let email = f[0] & crlf & "To: " & to & crlf & "Subject: " & subject & crlf & options & "Date: " & now & crlf & crlf & message
-  #echo email
   if (emulate == true and email.startsWith("From:")) :
     echo email
     result = true
