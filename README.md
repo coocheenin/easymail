@@ -21,7 +21,8 @@ import easymail
 extraHeaders.add("Cc: me@mydomain.com")
 extraHeaders.add("X-Mailer: EasyMail v0.1.0")
 
-if mail("youremail@protonmail.com", "NIM Subject", "Hi, It's EasyMail test message!", extraHeaders): echo "The command completed successfuly!"
+if mail("youremail@protonmail.com", "NIM Subject", "Hi, It's EasyMail test message!", extraHeaders):
+  echo "The command completed successfuly!"
 ```
 Here is a fifth parameter `emulate`, passing with `true` value will print all generated headers and body **without sending** attempt:
 
