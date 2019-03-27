@@ -1,7 +1,12 @@
 # EasyMail ![version badge](https://img.shields.io/badge/pre--release-v.0.1.0-green.svg)
 
 EasyMail is a simple wrapper for the sendmail command. It's provides the easiest way for sending emails from your binaries in [Nim](https://nim-lang.org/).
-
+## Installation
+Install the package by running:
+```
+nimble install easymail
+```
+Feel free to [test the package](https://github.com/coocheenin/easymail#testing) before writing any code.
 ## Usage
 
 **Note:** Only with Linux server distro compatible.
